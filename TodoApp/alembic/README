@@ -1,0 +1,77 @@
+# SQLite Project
+
+This project uses SQLite as the database to manage and persist data. SQLite is a lightweight, self-contained, serverless database engine that is ideal for small to medium-sized applications.
+
+## Features
+
+- **Lightweight and Fast**: SQLite is designed for embedded systems and small-scale data storage needs.
+- **Self-Contained**: No external dependencies or separate database server required.
+- **Simple API**: Easy to set up and use with minimal configuration.
+
+## Setup Instructions
+
+### Prerequisites
+
+1. Install **SQLite** if it's not already available on your system:
+
+On Linux:
+'''bash
+sudo apt update
+sudo apt install sqlite3
+'''
+
+On macOS:
+'''bash
+brew install sqlite
+'''
+
+On Windows:
+Download the precompiled binary from the [SQLite website](https://sqlite.org/download.html).
+
+2. Install **SQLite** (if using `better-sqlite3` or other Node.js libraries for SQLite integration)
+
+### Installation
+
+1. Clone the repository:
+'''bash
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
+
+# Database Setup:
+
+1. Open SQLite shell:
+sqlite3 database_name.db
+
+2. Create tables and seed initial data (sql):
+
+CREATE TABLE example_table (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+3. Exit the SQLite shell:
+.quit
+
+# Contributions
+Feel free to submit issues or pull requests. Contributions are welcome!
+
+# Resources
+SQLite Official Documentation
+better-sqlite3 API Documentation:
+https://github.com/WiseLibs/better-sqlite3/blob/master/docs/api.md
+
+FastAPI Tutorial #7 – Authentication
+https://www.youtube.com/watch?v=fGX71dNjGD0
+How Does JWT Authentication Work? (JSON Web Token) | Tokens vs Sessions
+https://www.youtube.com/watch?v=hoBSjmrwF1k
+JSON Web Tokens crash course - JWT tokens explained
+https://www.youtube.com/watch?v=t9FIPX93bW4
+What are JSON Web Tokens? JWT Auth Explained [Tutorial]
+https://www.youtube.com/watch?v=x5gLL8-M9Fo
+
+## 🌐 Sources
+
+1. [sqlite.org - README.md](https://www.sqlite.org/src/file/README.md)  
+2. [github.com - better-sqlite3 API Documentation](https://github.com/WiseLibs/better-sqlite3/blob/master/docs/api.md)  
+3. [stackoverflow.com - Directory Tree in README.md](https://stackoverflow.com/questions/23989232/is-there-a-way-to-represent-a-directory-tree-in-a-github-readme-md)  
